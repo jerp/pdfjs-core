@@ -3,9 +3,12 @@
 [![NPM version][npm-image]][npm-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
-Packaging element of the pdfjs core library for the browser
+Packaging element of the [pdfjs](https://github.com/mozilla/pdf.js/) core library for the browser
+
 ## Useage
-npm i 
+npm i pdfjs-core --save
+
+Check [test/index.js](test/index.js) for usage examples
 
 [travis-url]: https://travis-ci.org/jerp/pdfjs-core
 [travis-image]: https://travis-ci.org/jerp/pdfjs-core.svg?branch=master
