@@ -6,7 +6,9 @@
 Packaging element of the [pdfjs](https://github.com/mozilla/pdf.js/) core library for the browser
 
 ## Useage
+```Shell
 npm i pdfjs-core --save
+```
 
 Check [test/index.js](test/index.js) for usage examples
 

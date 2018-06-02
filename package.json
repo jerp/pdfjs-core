@@ -1,6 +1,6 @@
 {
   "name": "pdfjs-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Packaging element of the pdfjs core library for the browser",
   "main": "index.js",
   "repository": "https://github.com/jerp/pdfjs-core.git",
@@ -10,7 +10,8 @@
   "scripts": {
     "build": "rollup -c",
     "test": "nyc mocha -u bdd",
-    "coverage": "nyc report --reporter=lcov --reporter=text-summary mocha -u bdd"
+    "coverage": "nyc report --reporter=lcov --reporter=text-summary mocha -u bdd",
+    "publish-coverage": "nyc istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "bugs": {
     "url": "https://github.com/jerp/pdfjs-core/issues"
