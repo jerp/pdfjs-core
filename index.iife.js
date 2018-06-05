@@ -1,4 +1,4 @@
-var PdfTools = (function (exports) {
+var pdfjsCore = (function (exports) {
 	'use strict';
 
 	var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};

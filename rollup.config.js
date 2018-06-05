@@ -1,17 +1,28 @@
 
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
-export default {
- entry: './main.js',
+
+const input = './main.js'
+const plugins = [
+  resolve(),
+  commonjs()
+]
+export default [{
+  input,
+  plugins,
   output: {
-//    banner: 'sap.ui.',
-    file: './index.js',
+    file: './index.iife.js',
     format: 'iife',
     name: 'pdfjsCore',
     exports: 'named'
   },
-  plugins: [
-    resolve(),
-    commonjs()
-  ]
-};
+},{
+  input,
+  plugins,
+  output: {
+    file: './index.amd.js',
+    format: 'amd',
+    id: 'pdfjsCore',
+    exports: 'named'
+  },
+}];
