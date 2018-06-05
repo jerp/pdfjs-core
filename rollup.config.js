@@ -7,7 +7,7 @@ export default {
 //    banner: 'sap.ui.',
     file: './index.js',
     format: 'iife',
-    name: 'PdfTools',
+    name: 'pdfjsCore',
     exports: 'named'
   },
   plugins: [
