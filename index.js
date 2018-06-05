@@ -45816,14 +45816,18 @@ var PdfTools = (function (exports) {
 
 	const { LocalPdfManager } = require$$0$j;
 
+
 	var PdfManager = LocalPdfManager;
+	var primitives_1$1 = _primitives;
 
 	var main = {
-		PdfManager: PdfManager
+		PdfManager: PdfManager,
+		primitives: primitives_1$1
 	};
 
 	exports.default = main;
 	exports.PdfManager = PdfManager;
+	exports.primitives = primitives_1$1;
 
 	return exports;
 

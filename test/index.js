@@ -1,5 +1,5 @@
 const { expect } = require('chai')
-const { PdfManager } = require('../main')
+const { PdfManager, primitives } = require('../main')
 const fs = require('fs')
 
 const readPdfasArrayBuffer = (name) => {
@@ -34,5 +34,11 @@ describe("PdfManager", () => {
       .then(() => {
         expect(pdfManager.pdfDocument.fingerprint != null).to.be.true
       })
+  })
+  describe("primitives", () => {
+    it('are exposed', () => {
+      expect(typeof primitives).to.eq('object')
+      expect(typeof primitives.isName).to.eq('function')
+    })
   })
 })
