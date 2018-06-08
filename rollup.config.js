@@ -25,4 +25,12 @@ export default [{
     id: 'pdfjsCore',
     exports: 'named'
   },
+},{
+  input,
+  plugins,
+  output: {
+    file: './index.cjs.js',
+    format: 'cjs',
+    exports: 'named'
+  },
 }];
